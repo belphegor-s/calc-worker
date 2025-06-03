@@ -12,7 +12,7 @@ Send a GET request with your math expression to the `/` endpoint using the `eval
 **Example:**
 
 ```bash
-curl "https://calc.pixly.sh/?eval=2+3*sqrt(16)"
+curl "https://calc.pixly.sh/?eval=sum(2,3*sqrt(16))"
 ```
 
 Response:
@@ -27,7 +27,7 @@ Response:
 
 ## 📚 Supported Features
 
-- Basic arithmetic: `+`, `-`, `*`, `/`, `%`, `^` (power)
+- Basic arithmetic: `+`, `-` (use sum() for addition & subtraction), `*`, `/`, `%`, `^` (power)
 - Aggregate functions:
 
   - `sum(...)` — sum of numbers
@@ -52,9 +52,9 @@ Response:
 
 | Expression                        | Result            |
 | --------------------------------- | ----------------- |
-| `2+3*sqrt(16)`                    | 14                |
+| `sum(2,3*sqrt(16))`               | 14                |
 | `sum(1,2,3,4)`                    | 10                |
-| `avg(10,20,30)+sin(pi/2)`         | 21                |
+| `sum(avg(10,20,30),sin(pi/2))`    | 21                |
 | `percentage(50,200)`              | 25                |
 | `stddev(10,12,23,23,16,23,21,16)` | 4.898979485566356 |
 | `factorial(5)` (or `5!`)          | 120               |
@@ -88,7 +88,7 @@ Make sure your expressions use supported functions and syntax.
 
 - Use `pi` and `e` constants freely, e.g., `sin(pi / 4)`
 - Functions support variable numbers of arguments: `sum(1, 2, 3, 4, 5)`
-- Use parentheses to control precedence: `sum(1, 2, (3 + 4))`
+- Use parentheses to control precedence: `sum(1, 2, (3 * 4))`
 
 ---
 
