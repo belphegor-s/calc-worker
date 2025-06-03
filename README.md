@@ -33,6 +33,7 @@ Response:
   - `sum(...)` — sum of numbers
   - `avg(...)` — average
   - `percentage(a, b)` — `(a / b) * 100`
+  - `percentage_of(percent, value)` — `(percent / 100) * value`
   - `min(...)`, `max(...)`
   - `median(...)`, `mode(...)`, `range(...)`
   - `stddev(...)` — standard deviation

@@ -6,6 +6,7 @@ Object.assign(parser.functions, {
 	sum: (...args) => args.reduce((a, b) => a + b, 0),
 	avg: (...args) => args.reduce((a, b) => a + b, 0) / args.length,
 	percentage: (a, b) => (a / b) * 100,
+	percentage_of: (percent, value) => (percent / 100) * value,
 	min: Math.min,
 	max: Math.max,
 	median: (...args) => {
