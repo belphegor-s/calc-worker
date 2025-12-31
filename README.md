@@ -5,7 +5,7 @@ Supports complex math expressions, statistics functions, aggregate operations, a
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 Send a GET request with your math expression to the `/` endpoint using the `eval` query parameter.
 
@@ -25,7 +25,7 @@ Response:
 
 ---
 
-## 📚 Supported Features
+## Supported Features
 
 - Basic arithmetic: `+`, `-` (use sum() for addition & subtraction), `*`, `/`, `%`, `^` (power)
 - Aggregate functions:
@@ -49,7 +49,7 @@ Response:
 
 ---
 
-## 📝 Usage Examples
+## Usage Examples
 
 | Expression                        | Result            |
 | --------------------------------- | ----------------- |
@@ -63,7 +63,7 @@ Response:
 
 ---
 
-## ⚙️ Error Handling
+## Error Handling
 
 If the expression is missing or invalid, you’ll get a JSON error response:
 
@@ -78,14 +78,14 @@ Make sure your expressions use supported functions and syntax.
 
 ---
 
-## 🔗 API Reference
+## API Reference
 
 - **Endpoint:** `GET https://calc.pixly.sh/`
 - **Query parameter:** `eval` (string) — math expression to evaluate
 
 ---
 
-## 💡 Tips
+## Tips
 
 - Use `pi` and `e` constants freely, e.g., `sin(pi / 4)`
 - Functions support variable numbers of arguments: `sum(1, 2, 3, 4, 5)`
@@ -93,7 +93,7 @@ Make sure your expressions use supported functions and syntax.
 
 ---
 
-## 🚧 Planned Features
+## Planned Features
 
 - POST support for batch calculations
 - Rate limiting & API keys
