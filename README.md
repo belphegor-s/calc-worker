@@ -1,7 +1,7 @@
-# Calculator API — Cloudflare Worker
+# Calculator API - Cloudflare Worker
 
 A full-featured, blazing-fast calculator API powered by Cloudflare Workers.
-Supports complex math expressions, statistics functions, aggregate operations, and trigonometry — all via simple URL query parameters.
+Supports complex math expressions, statistics functions, aggregate operations, and trigonometry - all via simple URL query parameters.
 
 ---
 
@@ -30,13 +30,13 @@ Response:
 - Basic arithmetic: `+`, `-` (use sum() for addition & subtraction), `*`, `/`, `%`, `^` (power)
 - Aggregate functions:
 
-  - `sum(...)` — sum of numbers
-  - `avg(...)` — average
-  - `percentage(a, b)` — `(a / b) * 100`
-  - `percentage_of(percent, value)` — `(percent / 100) * value`
+  - `sum(...)` - sum of numbers
+  - `avg(...)` - average
+  - `percentage(a, b)` - `(a / b) * 100`
+  - `percentage_of(percent, value)` - `(percent / 100) * value`
   - `min(...)`, `max(...)`
   - `median(...)`, `mode(...)`, `range(...)`
-  - `stddev(...)` — standard deviation
+  - `stddev(...)` - standard deviation
   - `variance(...)`
 
 - Factorials: `!`
@@ -81,7 +81,7 @@ Make sure your expressions use supported functions and syntax.
 ## API Reference
 
 - **Endpoint:** `GET https://calc.pixly.sh/`
-- **Query parameter:** `eval` (string) — math expression to evaluate
+- **Query parameter:** `eval` (string) - math expression to evaluate
 
 ---
 
