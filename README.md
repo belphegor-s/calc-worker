@@ -12,7 +12,7 @@ Send a GET request with your math expression to the `/` endpoint using the `eval
 **Example:**
 
 ```bash
-curl "https://calc.pixly.sh/?eval=sum(2,3*sqrt(16))"
+curl "https://calc.procd.cc/?eval=sum(2,3*sqrt(16))"
 ```
 
 Response:
@@ -29,7 +29,6 @@ Response:
 
 - Basic arithmetic: `+`, `-` (use sum() for addition & subtraction), `*`, `/`, `%`, `^` (power)
 - Aggregate functions:
-
   - `sum(...)` - sum of numbers
   - `avg(...)` - average
   - `percentage(a, b)` - `(a / b) * 100`
@@ -80,7 +79,7 @@ Make sure your expressions use supported functions and syntax.
 
 ## API Reference
 
-- **Endpoint:** `GET https://calc.pixly.sh/`
+- **Endpoint:** `GET https://calc.procd.cc/`
 - **Query parameter:** `eval` (string) - math expression to evaluate
 
 ---
